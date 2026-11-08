@@ -7,7 +7,7 @@ const source = fs.existsSync(path.join(__dirname, 'dist', 'index.html'))
   ? path.join(__dirname, 'dist') : __dirname;
 fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(path.join(output, 'assets'), { recursive: true });
-for (const file of ['index.html', 'styles.css', 'app-data.js', 'core.js', 'app.js']) {
+for (const file of ['index.html', 'styles.css', 'app-data.js', 'core.js', 'conference-core.js', 'schedule.js', 'app.js']) {
   fs.copyFileSync(path.join(source, file), path.join(output, file));
 }
 const documentName = 'Pulmonary_and_Critical_Care_Research_Databases.docx';

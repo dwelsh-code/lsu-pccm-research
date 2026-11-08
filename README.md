@@ -1,39 +1,28 @@
-# LSU PCCM Research
+# CTS Research Hub
 
-Research resource website for LSU Health New Orleans Pulmonary and Critical Care Medicine faculty and fellows.
+Live domains: https://ctsresearchhub.org and https://lsupccmresearch.org.
 
-Intended website address: **lsupccmresearch.org**. Domain connection and live deployment are not yet complete.
+Release 1.1 is implemented and tested, with publication pending Vercel deployment access. It simplifies navigation, increases typography, adds 13 research resources, a PCCM research presentation schedule, and Lowenstein PCCM Micro-Grants applications and recipients. Shared form activation is pending connection of the approved private storage and verification of email delivery; the previous release remains live until publication is confirmed.
 
-## Backup contents
+## Build and check
 
-- **lsu-pccm-research-source.zip** — complete source tree with HTML, CSS, JavaScript, database inventory, checks, project notes, preview, and the database Word document.
-- **lsu-pccm-research-history.bundle** — complete local Git history and branch for restoring a working Git repository.
-- **CTS_Research_Hub_Preview.html** — self-contained working website preview; download and open in Safari or Chrome.
-- **Pulmonary_and_Critical_Care_Research_Databases.docx** — the current research database directory.
-- **BACKUP_MANIFEST.json** — source commit and SHA-256 checksums for verification.
+Run `pnpm install`, `pnpm build`, and `pnpm test`. Vercel uses `node build-vercel.cjs` and publishes only `public/`. Private server code is under `api/` and `lib/`. Never deploy `.env` files or expose storage tokens. Environment variable names are documented in `.env.example`.
 
-Backup prepared November 8, 2026. The source commit is `ede30fcd6437ea1b47bc6b19bf07e8a878969c0c`.
+## Content
 
-## Current website
+- `data/database-inventory.json`: the preserved 40-resource PCCM database directory.
+- `data/additional-resources.json`: new study design, literature, funding, writing, and collaboration resources.
+- `data/microgrant-recipients.json`: approved recipients and projects; empty until the owner supplies award details.
+- `dist/`: generated resource data plus website HTML, CSS and JavaScript.
+- `docs/SHARED_FORMS_SETUP.md`: activation, privacy, pricing, and verification requirements.
+- `docs/VERCEL_DEPLOYMENT.md`: deployment and Porkbun DNS history.
 
-The first release includes 40 research databases in 17 topic groups, 13 LSU resource links, search and filtering, resource detail pages, and conference schedules. PCCM research conference recurrence is the second and fourth Wednesdays at noon Central. Session speakers and topics await the section schedule.
+The conference recurrence is second and fourth Wednesdays at noon Central. Prior section schedule details, speakers, location, and holiday changes still need confirmation. The schedule does not fabricate presenter assignments.
 
-The top banner reads **FOR LSU HEALTH NEW ORLEANS PCCM FACULTY & FELLOWS**.
+The canonical documentation home is intended to be `/Users/dwelsh/Projects/Coding/Websites/lsu-health-cts-research-hub`. This session's active source checkout is outside iCloud in the permitted task workspace. Canonical promotion has not been completed because that destination is not writable in this session.
 
-## Restore source and history
+The owner approved free private Vercel Blob storage and FormSubmit on November 8, 2026. Browser automation was rejected for the current URL; the CLI authorization attempt subsequently failed because session network policy blocked api.vercel.com. No paid services or unverified email delivery have been enabled.
 
-Download `lsu-pccm-research-history.bundle`, then run:
+For an offline visual preview, run `node build-preview.cjs` and open `preview/CTS_Research_Hub_Preview.html`. Shared forms require the deployed API; the preview does not simulate successful submissions.
 
-```bash
-git clone lsu-pccm-research-history.bundle lsu-pccm-research
-cd lsu-pccm-research
-git remote set-url origin https://github.com/dwelsh-code/lsu-pccm-research.git
-```
-
-The ZIP is an alternative if Git history is not needed. Open `dist/index.html` or the standalone preview. The site needs no installation or server for local review. Run `node verify.cjs` from the restored source folder for the focused integrity, search, filtering, route, schedule, and document checks.
-
-## Verification limits
-
-Thirteen focused checks passed; 58 routes rendered in a minimal test harness. Full browser visual review has not been completed. Hosting source synchronization was blocked in the authoring session. This repository is a private backup; creating it does not deploy the website or connect its domain.
-
-This first GitHub backup uses source and history archives because the GitHub connection did not have access to the newly created private repository. The individual source files and their history are preserved inside those archives.
+The GitHub source update was also rejected by the connector with HTTP 403 “Resource not accessible by integration.” The current revision is committed locally; the remote repository still contains the earlier version.

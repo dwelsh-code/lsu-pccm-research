@@ -1,0 +1,7 @@
+{
+  "name": "lsu-pccm-research",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": {"build":"node build-data.js && node build-vercel.cjs","test":"node verify.cjs && node --test tests/*.test.cjs"},
+  "dependencies": {"@vercel/blob":"^2.3.0"}
+}

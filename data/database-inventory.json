@@ -1,0 +1,344 @@
+[
+  [
+    "Data discovery and research repositories",
+    [
+      [
+        "NHLBI BioLINCC",
+        "Repository of clinical trial and observational study data relevant to lung, heart, blood, and sleep research, with biospecimens available for selected studies. A useful starting point for finding archived pulmonary and critical care cohorts.",
+        "Study application, institutional review documentation, and data-use agreement; specimen requests receive separate review.",
+        "https://biolincc.nhlbi.nih.gov/"
+      ],
+      [
+        "NHLBI BioData Catalyst",
+        "Cloud ecosystem for discovering and analyzing longitudinal clinical, phenotypic, genomic, and other molecular data from NHLBI studies, including TOPMed. Supports cross-study work in lung disease and related conditions.",
+        "Access depends on the source dataset; controlled data require authorization. Cloud analysis may incur costs.",
+        "https://biodatacatalyst.nhlbi.nih.gov/"
+      ],
+      [
+        "Database of Genotypes and Phenotypes dbGaP",
+        "NIH repository of human genotype and phenotype studies. Search for COPD, asthma, pulmonary fibrosis, pulmonary hypertension, and related cohorts; public study pages describe variables, consent groups, and available datasets.",
+        "Study descriptions are public; individual-level controlled data require an approved institutional request.",
+        "https://dbgap.ncbi.nlm.nih.gov/home/"
+      ]
+    ],
+    false
+  ],
+  [
+    "ICU clinical and physiologic databases",
+    [
+      [
+        "Medical Information Mart for Intensive Care MIMIC IV",
+        "Deidentified hospital and ICU records from Beth Israel Deaconess Medical Center. Includes diagnoses, laboratory results, medications, procedures, vital signs, and ICU charted observations. Useful for sepsis, ventilation, organ dysfunction, and outcomes studies.",
+        "PhysioNet credentialing, required training, and data-use agreement. Single-center data.",
+        "https://physionet.org/content/mimiciv/"
+      ],
+      [
+        "eICU Collaborative Research Database",
+        "Multicenter US ICU records including vital signs, diagnoses, treatment information, care plans, and severity-of-illness measures. Useful for studying practice variation and evaluating whether models developed in another ICU dataset transport across hospitals.",
+        "PhysioNet credentialing, required training, and data-use agreement. Variable completeness differs across centers.",
+        "https://physionet.org/content/eicu-crd/"
+      ],
+      [
+        "HiRID High Time Resolution ICU Dataset",
+        "High-frequency ICU observations from Bern University Hospital in Switzerland, including physiologic measurements and treatment information. Particularly useful for time-series research, clinical deterioration prediction, and circulatory failure studies.",
+        "Contributor-reviewed access through PhysioNet; follow current application, training, and agreement requirements.",
+        "https://physionet.org/content/hirid/"
+      ],
+      [
+        "Amsterdam University Medical Centers Database AmsterdamUMCdb",
+        "European ICU database containing numerical observations, laboratory results, medications, procedures, and device-related measurements. Useful for critical illness phenotyping and external validation in a different health system.",
+        "Research application and access agreement; consult the current Amsterdam Medical Data Science instructions.",
+        "https://amsterdammedicaldatascience.nl/"
+      ],
+      [
+        "MIMIC IV Waveform Database",
+        "Bedside monitor waveforms and numeric measurements, including electrocardiography, photoplethysmography, respiration, and blood pressure signals. Selected records can be linked with MIMIC-IV clinical data for physiologic monitoring research.",
+        "Waveform release is open access; linked MIMIC-IV clinical data require separate credentialed access.",
+        "https://physionet.org/content/mimic4wdb/"
+      ]
+    ],
+    true
+  ],
+  [
+    "ARDS and acute respiratory failure trials",
+    [
+      [
+        "ARDSNet ARMA KARMA and LARMA",
+        "Archived randomized trial data on lower versus traditional tidal volumes and the ketoconazole and lisofylline interventions in acute lung injury and ARDS. Includes protocol-defined clinical measurements and outcomes for secondary analyses.",
+        "Request through BioLINCC; data and specimen access are reviewed separately.",
+        "https://biolincc.nhlbi.nih.gov/studies/ardsnet/"
+      ],
+      [
+        "ARDSNet Fluid and Catheter Treatment Trial FACTT",
+        "Randomized trial data comparing conservative and liberal fluid strategies and pulmonary artery versus central venous catheter guidance in acute lung injury. Supports studies of fluid balance, hemodynamics, organ function, and clinical outcomes.",
+        "BioLINCC application and data-use agreement; available specimens have consent restrictions.",
+        "https://biolincc.nhlbi.nih.gov/studies/factt/"
+      ],
+      [
+        "ARDSNet Early Versus Full Enteral Nutrition EDEN",
+        "Trial data comparing initial trophic with full enteral feeding in mechanically ventilated patients with acute lung injury. Includes nutrition exposure, gastrointestinal tolerance, ventilator-free days, and other trial outcomes.",
+        "BioLINCC application and data-use agreement; check available variables and follow-up files.",
+        "https://biolincc.nhlbi.nih.gov/studies/eden/"
+      ],
+      [
+        "ARDSNet Statins for Acutely Injured Lungs from Sepsis SAILS",
+        "Rosuvastatin versus placebo trial data in sepsis-associated ARDS, with clinical, organ dysfunction, and outcome measurements. Useful for secondary analyses of ARDS heterogeneity and treatment response hypotheses.",
+        "BioLINCC application and data-use agreement; biospecimen use has additional restrictions.",
+        "https://biolincc.nhlbi.nih.gov/studies/sails/"
+      ]
+    ],
+    true
+  ],
+  [
+    "Sleep and sleep disordered breathing",
+    [
+      [
+        "National Sleep Research Resource NSRR",
+        "Repository of polysomnography, actigraphy, questionnaires, and associated clinical data from multiple cohorts and trials. Includes resources for sleep apnea, nocturnal hypoxemia, and cardiopulmonary outcomes, such as the Sleep Heart Health Study.",
+        "Browse publicly; participant-level downloads generally require a dataset-specific request and agreement.",
+        "https://sleepdata.org/"
+      ]
+    ],
+    false
+  ],
+  [
+    "COPD and emphysema",
+    [
+      [
+        "Genetic Epidemiology of COPD COPDGene",
+        "Longitudinal cohort with smoking and exposure histories, spirometry, chest CT imaging, symptoms, exacerbations, and genetic or molecular data in selected releases. Supports research on emphysema, airway disease, lung function trajectories, and COPD heterogeneity.",
+        "Controlled data through dbGaP or a study-approved proposal and agreement; images and specimens may require additional review.",
+        "https://www.copdgene.org/"
+      ],
+      [
+        "Subpopulations and Intermediate Outcome Measures in COPD SPIROMICS",
+        "Deeply phenotyped longitudinal COPD and smoking-exposed cohort with clinical assessments, spirometry, CT imaging, exacerbation follow-up, and biomarker resources. Designed to identify disease subgroups and intermediate outcomes.",
+        "Study access requires a distribution agreement and applicable proposal approvals; archived SPIROMICS I data also appear in BioLINCC.",
+        "https://spiromics.org/spiromics/obtaining-data"
+      ]
+    ],
+    true
+  ],
+  [
+    "Bronchiectasis and nontuberculous mycobacteria",
+    [
+      [
+        "European Bronchiectasis Registry EMBARC",
+        "Multinational longitudinal bronchiectasis registry with baseline and annual clinical follow-up. EMBARC-BRIDGE adds linked biospecimens and biological datasets; bacterial isolates and associated metadata are also available through separate requests.",
+        "Scientific proposal review and use declaration; some requests may carry charges.",
+        "https://www.bronchiectasis.net/accessing-embarc-samples-data/"
+      ],
+      [
+        "US Bronchiectasis and NTM Research Registry",
+        "Longitudinal clinician-reported data on non-cystic fibrosis bronchiectasis and nontuberculous mycobacterial lung disease. Includes disease characteristics, pulmonary function, microbiology, treatment, and clinical outcomes for collaborative research.",
+        "Contact the registry program about proposal and collaboration requirements; individual-level data are not an unrestricted download.",
+        "https://www.bronchandntm.org/For-Providers/Research/Research-Programs/Bronchiectasis-and-NTM-Research-Registry"
+      ]
+    ],
+    false
+  ],
+  [
+    "Cystic fibrosis",
+    [
+      [
+        "Cystic Fibrosis Foundation Patient Registry",
+        "Longitudinal CF clinical registry capturing patient characteristics, lung function, respiratory microbiology, treatments, complications, and outcomes. Supports natural history, comparative effectiveness, and treatment-era analyses.",
+        "Formal research application and scientific review; individual-level data require approval.",
+        "https://www.cff.org/researchers/patient-registry-data-requests"
+      ]
+    ],
+    false
+  ],
+  [
+    "Interstitial lung disease and lung tissue resources",
+    [
+      [
+        "Pulmonary Fibrosis Foundation Patient Registry",
+        "Longitudinal clinical data on pulmonary fibrosis and interstitial lung disease, with biosamples and high-resolution chest CT scans available for selected participants. Useful for disease progression, biomarkers, and outcomes research.",
+        "Ancillary study proposal and agreements; investigators without a Care Center Network partner may access data for a fee.",
+        "https://www.pulmonaryfibrosis.org/get-involved/pff-community-registry/current-research"
+      ],
+      [
+        "Lung Tissue Research Consortium LTRC",
+        "Linked lung tissue, blood samples, clinical information, and radiographic studies from patients undergoing medically indicated lung resection. Includes COPD, idiopathic pulmonary fibrosis, other interstitial pneumonias, and connective tissue disease-associated interstitial pneumonia.",
+        "Request through BioLINCC; tissue and specimen availability require review.",
+        "https://biolincc.nhlbi.nih.gov/studies/ltrc/"
+      ]
+    ],
+    true
+  ],
+  [
+    "Pulmonary vascular disease",
+    [
+      [
+        "Pulmonary Vascular Disease Phenomics PVDOMICS",
+        "Deep phenotyping across the spectrum of pulmonary hypertension, with comparators and controls. Includes clinical, physiologic, imaging, and molecular characterization relevant to pulmonary vascular disease and right ventricular function.",
+        "Data and specimens are requestable through BioLINCC; check the released files and consent restrictions.",
+        "https://biolincc.nhlbi.nih.gov/studies/pvdomics/"
+      ]
+    ],
+    false
+  ],
+  [
+    "Lung transplantation",
+    [
+      [
+        "Scientific Registry of Transplant Recipients SRTR",
+        "US transplant candidate, donor, and recipient data, including lung transplantation, waitlist events, transplant characteristics, and follow-up outcomes. Standard Analysis Files support access, allocation, and survival studies.",
+        "Request Standard Analysis Files; agreements, fees, and supplemental-variable review depend on the request.",
+        "https://srtr.hrsa.gov/requesting-data/about-srtr-standard-analysis-files-safs/"
+      ]
+    ],
+    false
+  ],
+  [
+    "Population respiratory health and mortality",
+    [
+      [
+        "National Health and Nutrition Examination Survey NHANES",
+        "US population survey combining questionnaires, examinations, and laboratory measurements. Selected cycles include spirometry, respiratory symptoms, smoking biomarkers, and inflammatory or metabolic measures useful for pulmonary epidemiology.",
+        "Public-use downloads are free; verify cycle-specific variables and apply complex survey methods.",
+        "https://www.cdc.gov/nchs/nhanes/"
+      ],
+      [
+        "National Health Interview Survey NHIS",
+        "US household survey with self-reported health conditions, respiratory disease, tobacco use, disability, healthcare access, and utilization. Useful for prevalence, burden, and disparities analyses across available survey years.",
+        "Public-use files are free; restricted variables and some linkages require an additional application.",
+        "https://www.cdc.gov/nchs/nhis/"
+      ],
+      [
+        "Behavioral Risk Factor Surveillance System BRFSS",
+        "State-based adult survey on health behaviors, chronic disease, preventive care, and access. Respiratory research can use asthma, COPD, smoking, and selected state or annual modules, including the Asthma Call-back Survey.",
+        "Public downloads are free; module availability varies by state and year.",
+        "https://www.cdc.gov/brfss/"
+      ],
+      [
+        "CDC WONDER Mortality Databases",
+        "Queryable aggregate mortality data by cause of death, geography, demographics, and year. Useful for trends in COPD, interstitial lung disease, pneumonia, and other respiratory causes of death.",
+        "Public query interface; small-cell suppression applies. These are aggregate data, not longitudinal patient records.",
+        "https://wonder.cdc.gov/"
+      ]
+    ],
+    true
+  ],
+  [
+    "Air pollution and environmental exposure",
+    [
+      [
+        "EPA Air Quality System AQS",
+        "Ambient air pollution measurements with monitor locations, meteorologic information, and data quality indicators. Can support studies of pollution exposure, respiratory exacerbations, and geographic differences in pulmonary outcomes.",
+        "Public data and API routes; exposure linkage to health datasets requires a defensible spatial and temporal approach.",
+        "https://www.epa.gov/aqs"
+      ]
+    ],
+    false
+  ],
+  [
+    "Hospital utilization readmissions and claims",
+    [
+      [
+        "HCUP National Inpatient Sample NIS",
+        "All-payer US hospital discharge sample with diagnoses, procedures, patient and hospital characteristics, charges, and discharge outcomes. Useful for national hospitalization patterns in respiratory failure, COPD, pneumonia, and critical illness.",
+        "Purchase, HCUP training, and data-use agreement. Discharge-level sampling does not support patient-level longitudinal follow-up.",
+        "https://hcup-us.ahrq.gov/nisoverview.jsp"
+      ],
+      [
+        "HCUP Nationwide Readmissions Database NRD",
+        "Hospital discharge data with patient linkage supporting readmission analyses within a calendar year. Useful for post-hospital outcomes after COPD exacerbations, pneumonia, respiratory failure, and other critical illnesses.",
+        "Purchase, training, and data-use agreement. Linkage is within state and year; patients cannot be followed across annual files.",
+        "https://hcup-us.ahrq.gov/nrdoverview.jsp"
+      ],
+      [
+        "CMS Medicare and Medicaid Research Data",
+        "Claims and enrollment resources for studying healthcare utilization, diagnoses, procedures, medication use in selected files, costs, and outcomes. Useful for chronic lung disease, post-ICU care, oxygen use, and services research.",
+        "Select the relevant CMS product through ResDAC; applications, agreements, fees, and secure analysis requirements vary.",
+        "https://resdac.org/"
+      ]
+    ],
+    true
+  ],
+  [
+    "Population biobanks and linked clinical cohorts",
+    [
+      [
+        "UK Biobank",
+        "Large prospective cohort with spirometry, lifestyle and smoking measures, genetic and other molecular data, imaging in subsets, and linked health outcomes. Supports lung function, disease risk, multimorbidity, and aging research.",
+        "Approved research application, fees, and platform requirements; assess healthy-volunteer selection when interpreting results.",
+        "https://www.ukbiobank.ac.uk/use-our-data/"
+      ],
+      [
+        "All of Us Research Program",
+        "US participant cohort combining electronic health records, surveys, physical measurements, genomics, and wearable data where available. Useful for respiratory disease associations, comorbidities, treatment patterns, and population heterogeneity.",
+        "Institutional agreement, researcher verification and training; participant-level analysis occurs in the Researcher Workbench. Computing costs may apply.",
+        "https://www.researchallofus.org/data-tools/workbench/"
+      ]
+    ],
+    false
+  ],
+  [
+    "Chest radiography and imaging methods",
+    [
+      [
+        "MIMIC CXR",
+        "Deidentified chest radiographs with associated radiology reports from Beth Israel Deaconess Medical Center. Supports imaging and language-model research involving findings such as edema, consolidation, pleural effusions, and support devices.",
+        "PhysioNet credentialing, required training, and data-use agreement; clinical linkage requires compatible MIMIC access.",
+        "https://physionet.org/content/mimic-cxr/"
+      ]
+    ],
+    true
+  ],
+  [
+    "Lung nodules lung cancer and screening",
+    [
+      [
+        "Lung Image Database Consortium LIDC IDRI",
+        "Thoracic CT collection with radiologist annotations of pulmonary lesions and nodules. Useful for nodule detection, segmentation, radiomics, and assessment of inter-reader variation. Annotation-based malignancy ratings are not equivalent to pathology confirmation.",
+        "Public collection through The Cancer Imaging Archive; follow collection license and citation terms.",
+        "https://www.cancerimagingarchive.net/collection/lidc-idri/"
+      ],
+      [
+        "National Lung Screening Trial NLST",
+        "Randomized low-dose CT versus chest radiography screening trial resources, including participant characteristics, screening results, diagnostic workup, lung cancer outcomes, mortality, and imaging resources. Useful for screening and risk-prediction studies.",
+        "Full datasets require a CDAS proposal and agreement; selected images and limited clinical variables are publicly available.",
+        "https://cdas.cancer.gov/nlst/"
+      ],
+      [
+        "Surveillance Epidemiology and End Results SEER",
+        "Population-based cancer registry data covering diagnosis, tumor characteristics, stage, initial treatment information, and survival. Lung and bronchus cancer cases support epidemiologic and outcomes research.",
+        "Research data require registration and applicable agreements; SEER-Medicare is a separate controlled-access linked resource.",
+        "https://seer.cancer.gov/data/"
+      ]
+    ],
+    false
+  ],
+  [
+    "Molecular genomics and lung cell atlases",
+    [
+      [
+        "Gene Expression Omnibus GEO",
+        "Public functional genomics repository containing study metadata and gene expression or epigenomic datasets. Search lung tissue, airway epithelium, bronchoalveolar lavage, blood, ARDS, COPD, bronchiectasis, or fibrosis for reusable studies.",
+        "Public datasets are downloadable; usable clinical covariates and preprocessing vary substantially by study.",
+        "https://www.ncbi.nlm.nih.gov/geo/"
+      ],
+      [
+        "Sequence Read Archive SRA",
+        "Raw high-throughput sequencing repository with transcriptomic, genomic, microbial, and metagenomic data. Useful for reanalysis of respiratory microbiome and host-response studies, usually in conjunction with BioProject metadata and associated publications.",
+        "Many datasets are public; controlled human sequencing data can require dbGaP authorization.",
+        "https://www.ncbi.nlm.nih.gov/sra"
+      ],
+      [
+        "NHLBI LungMAP",
+        "Lung-focused molecular atlas linking cell types, molecular programs, tissue structure, imaging, and spatial context across development, health, and disease. Useful for exploring gene localization and interpreting lung cell populations.",
+        "Public atlas and dataset exploration; follow individual dataset reuse and citation conditions.",
+        "https://www.lungmap.net/"
+      ],
+      [
+        "Human Cell Atlas Lung Network Data",
+        "Single-cell and related multi-omic lung datasets accessible through the Human Cell Atlas ecosystem. Reference atlases support cell annotation and comparison of healthy lung cell states with disease-associated changes.",
+        "Public discovery and access to released datasets; confirm donor metadata and study-specific data terms.",
+        "https://data.humancellatlas.org/hca-bio-networks/lung"
+      ]
+    ],
+    true
+  ]
+]

@@ -1,0 +1,236 @@
+[
+  {
+    "id": "lsu-biostatistics",
+    "name": "LSU Health biostatistical support",
+    "category": "Study design and statistics",
+    "kind": "Consultation",
+    "summary": "Find statistical consultation for fellows, residents, and faculty before finalizing a study design or analysis. The School of Medicine describes fellow and resident support of up to 10 hours; confirm eligibility and availability.",
+    "url": "https://www.medschool.lsuhsc.edu/research/biostatistical_support.aspx",
+    "source": "LSU Health New Orleans",
+    "type": "local",
+    "topic": "Study design and statistics",
+    "access": "See the official resource for current eligibility, requirements, and access.",
+    "checked": "2026-11-08",
+    "tags": [
+      "Study design and statistics",
+      "Consultation",
+      "LSU Health biostatistical support"
+    ]
+  },
+  {
+    "id": "berd",
+    "name": "LA CaTS study design and biostatistics",
+    "category": "Study design and statistics",
+    "kind": "Consultation",
+    "summary": "Get help with study design, sample size, analysis plans, data management, and grant methods. Contact the BERD Core early in project planning.",
+    "url": "https://www.lacats.org/cores/biostatistics-and-epidemiology-core/",
+    "source": "LA CaTS",
+    "type": "general",
+    "topic": "Study design and statistics",
+    "access": "See the official resource for current eligibility, requirements, and access.",
+    "checked": "2026-11-08",
+    "tags": [
+      "Study design and statistics",
+      "Consultation",
+      "LA CaTS study design and biostatistics"
+    ]
+  },
+  {
+    "id": "lsu-funding",
+    "name": "LSU Health research funding and core facilities",
+    "category": "Funding and career development",
+    "kind": "Funding",
+    "summary": "Find institutional research programs, intramural funding, grant preparation and review, and core facilities. Check the current program requirements.",
+    "url": "https://www.medschool.lsuhsc.edu/research/",
+    "source": "LSU Health New Orleans",
+    "type": "local",
+    "topic": "Funding and career development",
+    "access": "See the official resource for current eligibility, requirements, and access.",
+    "checked": "2026-11-08",
+    "tags": [
+      "Funding and career development",
+      "Funding",
+      "LSU Health research funding and core facilities"
+    ]
+  },
+  {
+    "id": "lsu-research-cafe",
+    "name": "LSU Health Research Caf\u00e9",
+    "category": "Funding and career development",
+    "kind": "Workshops",
+    "summary": "Workshops and recordings on grant writing, fellowship and career development applications, biosketches, and research administration.",
+    "url": "https://medschool.lsuhsc.edu/research/research_cafe.aspx",
+    "source": "LSU Health New Orleans",
+    "type": "local",
+    "topic": "Funding and career development",
+    "access": "See the official resource for current eligibility, requirements, and access.",
+    "checked": "2026-11-08",
+    "tags": [
+      "Funding and career development",
+      "Workshops",
+      "LSU Health Research Caf\u00e9"
+    ]
+  },
+  {
+    "id": "ats-grants",
+    "name": "ATS research grants",
+    "category": "Funding and career development",
+    "kind": "Funding",
+    "summary": "Pulmonary, critical care, and sleep research funding, including opportunities for early-career investigators. Use the current cycle for eligibility and deadlines.",
+    "url": "https://site.thoracic.org/research/the-ats-research-program/grants-and-eligibility",
+    "source": "American Thoracic Society",
+    "type": "general",
+    "topic": "Funding and career development",
+    "access": "See the official resource for current eligibility, requirements, and access.",
+    "checked": "2026-11-08",
+    "tags": [
+      "Funding and career development",
+      "Funding",
+      "ATS research grants"
+    ]
+  },
+  {
+    "id": "ats-grant-guide",
+    "name": "ATS grant resource guide",
+    "category": "Funding and career development",
+    "kind": "Funding directory",
+    "summary": "Find funding mechanisms for clinical fellows, postdoctoral researchers, and early-career faculty across pulmonary, critical care, and sleep medicine.",
+    "url": "https://site.thoracic.org/learning/professional-development-for-early-and-mid-career-professionals/grant-resource-guide",
+    "source": "American Thoracic Society",
+    "type": "general",
+    "topic": "Funding and career development",
+    "access": "See the official resource for current eligibility, requirements, and access.",
+    "checked": "2026-11-08",
+    "tags": [
+      "Funding and career development",
+      "Funding directory",
+      "ATS grant resource guide"
+    ]
+  },
+  {
+    "id": "nhlbi-training",
+    "name": "NHLBI training and career development",
+    "category": "Funding and career development",
+    "kind": "Career development",
+    "summary": "Explore research training, fellowship, and career development pathways. Review current funding announcements with your mentor and research office.",
+    "url": "https://www.nhlbi.nih.gov/grants-and-training/training-and-career-development",
+    "source": "NHLBI",
+    "type": "general",
+    "topic": "Funding and career development",
+    "access": "See the official resource for current eligibility, requirements, and access.",
+    "checked": "2026-11-08",
+    "tags": [
+      "Funding and career development",
+      "Career development",
+      "NHLBI training and career development"
+    ]
+  },
+  {
+    "id": "nih-reporter",
+    "name": "NIH RePORTER",
+    "category": "Funding and career development",
+    "kind": "Funded projects",
+    "summary": "Search funded projects to identify investigators, potential collaborators, related aims, and funding patterns in your research area.",
+    "url": "https://reporter.nih.gov/",
+    "source": "NIH",
+    "type": "general",
+    "topic": "Funding and career development",
+    "access": "See the official resource for current eligibility, requirements, and access.",
+    "checked": "2026-11-08",
+    "tags": [
+      "Funding and career development",
+      "Funded projects",
+      "NIH RePORTER"
+    ]
+  },
+  {
+    "id": "pubmed",
+    "name": "PubMed literature search",
+    "category": "Literature and systematic reviews",
+    "kind": "Literature",
+    "summary": "Search biomedical literature, build a search strategy, and save searches to follow work in your research area.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/",
+    "source": "National Library of Medicine",
+    "type": "general",
+    "topic": "Literature and systematic reviews",
+    "access": "See the official resource for current eligibility, requirements, and access.",
+    "checked": "2026-11-08",
+    "tags": [
+      "Literature and systematic reviews",
+      "Literature",
+      "PubMed literature search"
+    ]
+  },
+  {
+    "id": "equator",
+    "name": "EQUATOR reporting guidelines",
+    "category": "Writing and reporting",
+    "kind": "Reporting checklists",
+    "summary": "Find the checklist for your study: CONSORT for trials, STROBE for observational studies, PRISMA for systematic reviews, and other design-specific guidelines. Use it when planning as well as writing.",
+    "url": "https://equator-network.org/reporting-guidelines/",
+    "source": "EQUATOR Network",
+    "type": "general",
+    "topic": "Writing and reporting",
+    "access": "See the official resource for current eligibility, requirements, and access.",
+    "checked": "2026-11-08",
+    "tags": [
+      "Writing and reporting",
+      "Reporting checklists",
+      "EQUATOR reporting guidelines"
+    ]
+  },
+  {
+    "id": "clinicaltrials",
+    "name": "ClinicalTrials.gov",
+    "category": "Clinical trials and collaboration",
+    "kind": "Trial registry",
+    "summary": "Find ongoing and completed pulmonary and critical care trials, outcomes, eligibility criteria, collaborators, and posted study results.",
+    "url": "https://clinicaltrials.gov/",
+    "source": "National Library of Medicine",
+    "type": "general",
+    "topic": "Clinical trials and collaboration",
+    "access": "See the official resource for current eligibility, requirements, and access.",
+    "checked": "2026-11-08",
+    "tags": [
+      "Clinical trials and collaboration",
+      "Trial registry",
+      "ClinicalTrials.gov"
+    ]
+  },
+  {
+    "id": "sccm-discovery",
+    "name": "SCCM Discovery research network",
+    "category": "Clinical trials and collaboration",
+    "kind": "Research network",
+    "summary": "Connect with critical care investigators, explore multicenter research, and find routes for sharing proposals and seeking research support.",
+    "url": "https://www.sccm.org/research/discovery-research-network",
+    "source": "Society of Critical Care Medicine",
+    "type": "general",
+    "topic": "Clinical trials and collaboration",
+    "access": "See the official resource for current eligibility, requirements, and access.",
+    "checked": "2026-11-08",
+    "tags": [
+      "Clinical trials and collaboration",
+      "Research network",
+      "SCCM Discovery research network"
+    ]
+  },
+  {
+    "id": "lung-grants",
+    "name": "American Lung Association research awards",
+    "category": "Funding and career development",
+    "kind": "Funding",
+    "summary": "Review lung health research awards and grants. Check current eligibility, application requirements, and submission dates.",
+    "url": "https://www.lung.org/research/awards-and-grants-opportunities",
+    "source": "American Lung Association",
+    "type": "general",
+    "topic": "Funding and career development",
+    "access": "See the official resource for current eligibility, requirements, and access.",
+    "checked": "2026-11-08",
+    "tags": [
+      "Funding and career development",
+      "Funding",
+      "American Lung Association research awards"
+    ]
+  }
+]
