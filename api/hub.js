@@ -1,7 +1,9 @@
 'use strict';
 const {createService,ServiceError}=require('../lib/hub-service.cjs');
 const store=require('../lib/blob-store.cjs');
-const notify=require('../lib/email.cjs');
+// FormSubmit supports browser AJAX. Save privately here; the browser sends
+// the notification using an opaque public destination alias, never an email.
+const notify=async()=>false;
 const service=createService({store,notify});
 const origins=new Set(['https://www.ctsresearchhub.org','https://ctsresearchhub.org','https://www.lsupccmresearch.org','https://lsupccmresearch.org','https://lsu-pccm-research.vercel.app',...(process.env.VERCEL_URL?['https://'+process.env.VERCEL_URL]:[])]);
 module.exports=async(req,res)=>{
