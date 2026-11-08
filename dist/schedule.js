@@ -16,26 +16,31 @@ async function mount(params){const id=++mountId;ready=false;records=[];draw();tr
 // FormSubmit's opaque destination alias is intended for public form code.
 // Keep the reviewer's email address exclusively in private server settings.
 const grantEndpoint='https://formsubmit.co/ajax/1799bc22492c82be57404fc6ec8faec9';
-async function sendGrantNotification(values,reference){
- try{
-  const response=await fetch(grantEndpoint,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({_subject:'Lowenstein PCCM Micro-Grants application — '+reference,_template:'table',_captcha:'false',name:values.name,email:values.email,'Training level':values.level,'Project description':values.project,'Funding need':values.need,'Budget requested (USD)':Number(values.budget),'Application reference':reference,'Submitted at':new Date().toISOString()}),signal:AbortSignal.timeout(20000)});
-  const data=await response.json();
-  return response.ok&&(data.success===true||data.success==='true')&&!/activat|confirm your email/i.test(data.message||'');
- }catch{return false;}
+function sendGrantNotification(values,reference){
+ // Use the ordinary HTML POST documented by FormSubmit and proven by the demo.
+ // A top-level form submission does not depend on AJAX/CORS support.
+ const notification=document.createElement('form');
+ notification.method='POST';notification.action=grantEndpoint.replace('/ajax/','/');
+ notification.hidden=true;
+ const fields={_subject:'Lowenstein PCCM Micro-Grants application — '+reference,_template:'table',_next:'https://www.ctsresearchhub.org/#microgrants?receipt='+encodeURIComponent(reference),name:values.name,email:values.email,'Training level':values.level,'Project description':values.project,'Funding need':values.need,'Budget requested (USD)':Number(values.budget),'Application reference':reference,'Submitted at':new Date().toISOString()};
+ for(const [name,value]of Object.entries(fields)){const input=document.createElement('input');input.type='hidden';input.name=name;input.value=String(value);notification.appendChild(input);}
+ document.body.appendChild(notification);notification.submit();notification.remove();
 }
+
 function bindGrant(){
  const form=document.getElementById('microgrant-form'),button=document.getElementById('grant-submit'),status=document.getElementById('grant-status');
  let saved=null;
+ const receipt=new URLSearchParams(location.hash.split('?')[1]||'').get('receipt');
+ const receiptMessage=receipt&&/^LPMG-[0-9]{8}-[A-F0-9]{10}$/.test(receipt)?'Application saved. Reference: '+receipt+'. The email service has returned you to this page. Inbox delivery still requires confirmation.':'';
  button.disabled=true;status.textContent='Checking application availability…';
- request('status').then(state=>{button.disabled=!state.grantsEnabled;status.textContent=state.grantsEnabled?'':'Online applications will open once submission processing is connected.';status.className='quiet-note form-status';}).catch(()=>{status.textContent='Online applications will open once submission processing is connected.';status.className='quiet-note form-status';});
- async function notifySaved(){
-  button.disabled=true;message(status,'Application saved. Reference: '+saved.reference+'. Sending the review notification…',true);
-  const notified=await sendGrantNotification(saved.values,saved.reference);
-  message(status,'Application received. Reference: '+saved.reference+'. '+(notified?'The email service accepted the review notification.':'Your application is saved, but the email service did not confirm the review notification. Keep this reference; you can retry the notification without submitting again.'),notified);
-  status.focus();button.disabled=false;
-  if(notified){saved=null;button.type='submit';button.textContent='Submit application';button.onclick=null;}
-  else{button.type='button';button.textContent='Retry review notification';button.onclick=notifySaved;}
+ request('status').then(state=>{button.disabled=!state.grantsEnabled;status.textContent=state.grantsEnabled?receiptMessage:'Online applications will open once submission processing is connected.';status.className='quiet-note form-status';}).catch(()=>{status.textContent='Online applications will open once submission processing is connected.';status.className='quiet-note form-status';});
+ function notifySaved(){
+  message(status,'Application saved. Reference: '+saved.reference+'. Continuing to the email service to complete the review notification…',true);
+  button.type='button';button.textContent='Continue email notification';button.onclick=notifySaved;button.disabled=false;
+  try{sendGrantNotification(saved.values,saved.reference);}
+  catch{message(status,'Application saved. Reference: '+saved.reference+'. The email step could not open. Use Continue email notification to try again.');}
  }
+
  form.onsubmit=async event=>{
   event.preventDefault();if(saved)return notifySaved();
   const values=Object.fromEntries(new FormData(form));
@@ -44,7 +49,7 @@ function bindGrant(){
   try{
    const result=await request('microgrant',values);
    saved={reference:result.reference,values};form.reset();
-   await notifySaved();
+   notifySaved();
   }catch(error){message(status,error.message);status.focus();button.disabled=false;}
  };
 }
