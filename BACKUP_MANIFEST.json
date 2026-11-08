@@ -1,0 +1,31 @@
+{
+  "prepared": "2026-11-08",
+  "source_commit": "ede30fcd6437ea1b47bc6b19bf07e8a878969c0c",
+  "files": [
+    {
+      "path": "CTS_Research_Hub_Preview.html",
+      "bytes": 126257,
+      "sha256": "d15b9bcceaf968ee59ada269a301b66a619c06a5efff9f6de6a837ce91072549"
+    },
+    {
+      "path": "Pulmonary_and_Critical_Care_Research_Databases.docx",
+      "bytes": 11709,
+      "sha256": "67018cf7a17d6d725e28929f035904d9b93c30e5f8b50d9da06cdb44a55f24f3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2492,
+      "sha256": "c3b9d73003b47eb65333b1b3862a3c755a54eb8e17521842c8635b6bfd306a58"
+    },
+    {
+      "path": "lsu-pccm-research-history.bundle",
+      "bytes": 112959,
+      "sha256": "1fcc0ca20051cac91ec4bf67c8e5d5fe53d4ddf9a1648807fb7952b188a05778"
+    },
+    {
+      "path": "lsu-pccm-research-source.zip",
+      "bytes": 116342,
+      "sha256": "82b04e792e5a863ed688a20f326b3c021694129615594d9ad3c72273fb038c21"
+    }
+  ]
+}
