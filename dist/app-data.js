@@ -1,7 +1,123 @@
 window.HUB_DATA = {
+  "intramuralFunding": [
+    {
+      "id": "wirp",
+      "name": "LSUHSC-Wide Intramural Research Program (WIRP)",
+      "audience": "Full-time LSU Health New Orleans faculty and research staff with a terminal degree; collaboration across at least two schools.",
+      "purpose": "Develop collaborative preliminary work toward external funding.",
+      "scheduleKind": "recurring",
+      "monthDays": [
+        "03-15",
+        "09-15"
+      ],
+      "deadlineText": "March 15 and September 15, 5:00 PM Central Time.",
+      "notes": "Published recurring schedule; confirm the current competition. WIRP instructions specify direct internal submission rather than ORS routing.",
+      "url": "https://publichealth.lsuhsc.edu/research/lsuhsc-wide-intramural-research-program/default.aspx",
+      "checked": "2026-11-09"
+    },
+    {
+      "id": "rep-new",
+      "name": "REP New Project Grant",
+      "audience": "School of Medicine faculty; prioritizes new faculty research needs and also considers new directions from established faculty.",
+      "purpose": "Develop a new research idea into a competitive external application.",
+      "scheduleKind": "recurring",
+      "monthDays": [
+        "03-09",
+        "07-09",
+        "11-09"
+      ],
+      "deadlineText": "March 9, July 9, and November 9. Cutoff time is not specified on the program page.",
+      "notes": "Confirm mechanism-specific eligibility, signatures, and the current call.",
+      "url": "https://medschool.lsuhsc.edu/research/new_project_grant.aspx",
+      "checked": "2026-11-09"
+    },
+    {
+      "id": "rep-clinical",
+      "name": "REP Clinical Research Grant",
+      "audience": "Eligible full-time School of Medicine clinical faculty with an MD; restrictions apply to start-up support and established external funding.",
+      "purpose": "Develop clinical research toward an external grant application.",
+      "scheduleKind": "recurring",
+      "monthDays": [
+        "03-09",
+        "07-09",
+        "11-09"
+      ],
+      "deadlineText": "March 9, July 9, and November 9. Cutoff time is not specified on the program page.",
+      "notes": "Read the eligibility exclusions and departmental support requirements before preparing an application.",
+      "url": "https://medschool.lsuhsc.edu/research/clinical_research_grant.aspx",
+      "checked": "2026-11-09"
+    },
+    {
+      "id": "rep-bridge",
+      "name": "REP Bridge Grant",
+      "audience": "Full-time School of Medicine faculty with external research funding within the preceding three years, under the program's criteria.",
+      "purpose": "Maintain research during a temporary interruption of external support.",
+      "scheduleKind": "recurring",
+      "monthDays": [
+        "03-09",
+        "07-09",
+        "11-09"
+      ],
+      "deadlineText": "March 9, July 9, and November 9. Cutoff time is not specified on the program page.",
+      "notes": "Confirm eligibility and continuation requirements with the School of Medicine Research Office.",
+      "url": "https://www.medschool.lsuhsc.edu/research/bridge_grant.aspx",
+      "checked": "2026-11-09"
+    },
+    {
+      "id": "rep-disparities",
+      "name": "REP Grant for Research on Healthcare Disparities",
+      "audience": "School of Medicine faculty, staff, fellows, residents, and students; sponsorship, endorsement, and departmental matching requirements apply.",
+      "purpose": "Support research addressing healthcare disparities in institutional or community settings.",
+      "scheduleKind": "recurring",
+      "monthDays": [
+        "03-15",
+        "07-15",
+        "11-15"
+      ],
+      "deadlineText": "March 15, July 15, and November 15; the next business day applies when a deadline falls on a weekend or holiday.",
+      "notes": "Calendar dates below remain the nominal listed dates. Confirm the adjusted date and cutoff with the program; holiday adjustments are not calculated here.",
+      "url": "https://medschool.lsuhsc.edu/research/health_disparities_grant_program.aspx",
+      "checked": "2026-11-09"
+    },
+    {
+      "id": "resident-research",
+      "name": "School of Medicine Resident Research Support",
+      "audience": "LSU Health School of Medicine residents with a sponsoring faculty mentor and at least equal departmental matching support.",
+      "purpose": "Help residents complete a research project.",
+      "scheduleKind": "rolling",
+      "deadlineText": "Applications may be submitted at any time under the published guidance.",
+      "notes": "Rolling submission does not guarantee available funds or approval. Confirm current availability and required endorsements.",
+      "url": "https://medschool.lsuhsc.edu/research/resident_research_opportunities.aspx",
+      "checked": "2026-11-09"
+    },
+    {
+      "id": "msrep",
+      "name": "Medical Student Research Enhancement Program (MSREP)",
+      "audience": "Medical students applying jointly with a research mentor under the published School of Medicine program.",
+      "purpose": "Support a mentored clinical or basic science research project.",
+      "scheduleKind": "dated",
+      "deadline": "2026-01-31",
+      "deadlineText": "Last posted call: January 31, 2026, 11:59 PM; the source does not specify a time zone.",
+      "notes": "This is a historical deadline, not an announced 2027 deadline. Confirm the next call with the School of Medicine Office of Research.",
+      "url": "https://www.medschool.lsuhsc.edu/student_affairs/Medical%20Student%20Research%20Enhancement%20Program%202025PMFTPMFinal.pdf",
+      "checked": "2026-11-09"
+    },
+    {
+      "id": "core-voucher",
+      "name": "School of Medicine Core Voucher Program",
+      "audience": "School of Medicine faculty; early-stage investigators with insufficient available research funds receive priority. Clinical-department matching requirements apply.",
+      "purpose": "Targeted support for approved core services tied to an external grant application; this is not a cash research award.",
+      "scheduleKind": "unannounced",
+      "deadlineText": "No fixed application deadline is posted on the program page.",
+      "notes": "Meet with the Core Director and obtain a cost estimate, departmental endorsement, and written authorization before work begins. Confirm available funds and submission timing.",
+      "url": "https://medschool.lsuhsc.edu/research/core_facilities/core_voucher_program.aspx",
+      "checked": "2026-11-09"
+    }
+  ],
+  "projectExamples": [],
   "conferenceUrl": "https://www.medschool.lsuhsc.edu/DOM/Sections/Pulmonary-CC/fellow-conferences.aspx",
   "micrograntRecipients": [],
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "resources": [
     {
       "id": "irb-start",
@@ -576,6 +692,32 @@ window.HUB_DATA = {
         "Funding and career development",
         "Funding",
         "American Lung Association research awards"
+      ]
+    },
+    {
+      "id": "kuali-login",
+      "name": "LSU Health Kuali Research Sign-In",
+      "category": "IRB and approvals",
+      "kind": "Application",
+      "summary": "Open Kuali Research for protocol submissions, proposal routing, and conflict-of-interest disclosures.",
+      "url": "https://lsuhsc.kuali.co/",
+      "source": "LSU Health New Orleans",
+      "type": "local",
+      "topic": "IRB and approvals",
+      "access": "An active Kuali user account is required. LSU Health personnel sign in with institutional credentials; follow the official quickguide for registration and external-user access.",
+      "accessUrl": "https://www.lsuhsc.edu/administration/academic/ors/irb/kuali_quickguides.aspx",
+      "badges": [
+        "LSU Health Sign-In"
+      ],
+      "checked": "2026-11-09",
+      "tags": [
+        "kuali",
+        "IRB",
+        "protocol",
+        "routing",
+        "COI",
+        "conflict of interest",
+        "submission"
       ]
     }
   ],
@@ -1339,6 +1481,180 @@ window.HUB_DATA = {
         "dataset",
         "research"
       ]
+    },
+    {
+      "id": "db-phar",
+      "name": "Pulmonary Hypertension Association Registry (PHAR)",
+      "topic": "Pulmonary vascular disease",
+      "summary": "Longitudinal registry of children and adults with pulmonary arterial hypertension (PAH) and chronic thromboembolic pulmonary hypertension (CTEPH). Supports research on clinical characteristics, treatments, and outcomes.",
+      "access": "Submit a concept proposal to the PHAR Publications and Presentations Committee. Approved dataset requests require a Data and Materials Distribution Agreement and secure access arranged through the coordinating center; local analysis also requires a qualified statistical analyst.",
+      "url": "https://phccregistry.org/",
+      "accessUrl": "https://pubs.phccregistry.org/node/7477",
+      "badges": [
+        "Proposal Review",
+        "Data Agreement"
+      ],
+      "checked": "2026-11-09",
+      "tags": [
+        "PHAR",
+        "PH",
+        "PAH",
+        "CTEPH",
+        "pulmonary hypertension",
+        "right ventricular",
+        "Pulmonary vascular disease",
+        "database",
+        "dataset",
+        "research"
+      ],
+      "category": "Research databases",
+      "kind": "Database",
+      "type": "database",
+      "source": "phccregistry.org"
+    },
+    {
+      "id": "db-pah-biobank",
+      "name": "National PAH Biobank",
+      "topic": "Pulmonary vascular disease",
+      "summary": "Pulmonary arterial hypertension resource linking clinical information with biological samples and genetic data. Includes PAH subtype, medical history, medications, and associated molecular resources.",
+      "access": "Submit a formal sample/data request for review by the PAH Biobank Sample Proposal Review Committee. Contact the program about variable and specimen availability before preparing a request.",
+      "url": "https://www.pahbiobank.org/",
+      "accessUrl": "https://www.pahbiobank.org/request-samples",
+      "badges": [
+        "Proposal Review"
+      ],
+      "checked": "2026-11-09",
+      "tags": [
+        "PH",
+        "PAH",
+        "pulmonary hypertension",
+        "genetics",
+        "biospecimens",
+        "Pulmonary vascular disease",
+        "database",
+        "dataset",
+        "research"
+      ],
+      "category": "Research databases",
+      "kind": "Database",
+      "type": "database",
+      "source": "pahbiobank.org"
+    },
+    {
+      "id": "db-elso",
+      "name": "Extracorporeal Life Support Organization (ELSO) Registry",
+      "topic": "ICU clinical and physiologic databases",
+      "summary": "International ECMO/ECLS registry with patient characteristics, illness severity, support details, complications, and outcomes. Useful for respiratory and cardiac extracorporeal support research.",
+      "access": "Use ELSO's data-request process and current data policy. Publication, internal-use, and aggregate epidemiology requests have different routes; eligibility and release conditions must be confirmed with ELSO.",
+      "url": "https://www.elso.org/registry.aspx",
+      "accessUrl": "https://www.elso.org/default.aspx?TabID=102",
+      "dictionaryUrl": "https://www.elso.org/registry/supportdocuments.aspx",
+      "badges": [
+        "Data Request"
+      ],
+      "checked": "2026-11-09",
+      "tags": [
+        "ECMO",
+        "ECLS",
+        "ARDS",
+        "extracorporeal",
+        "critical care",
+        "ICU clinical and physiologic databases",
+        "database",
+        "dataset",
+        "research"
+      ],
+      "category": "Research databases",
+      "kind": "Database",
+      "type": "database",
+      "source": "elso.org"
+    },
+    {
+      "id": "db-virus",
+      "name": "SCCM Discovery VIRUS COVID-19 Registry",
+      "topic": "ICU clinical and physiologic databases",
+      "summary": "Multicenter COVID-19 registry supporting research on hospitalized patients, clinical characteristics, treatments, and outcomes through approved ancillary studies.",
+      "access": "Participating-site investigators may submit ancillary proposals for a deidentified data subset. SCCM describes a separate conditional route for outside groups after core publication; confirm current availability and data-use agreement requirements.",
+      "url": "https://www.sccm.org/research/discovery-research-network/discovery-research-collaboratives/virus-covid-19-registry",
+      "accessUrl": "https://www.sccm.org/research/discovery-research-network/discovery-research-collaboratives/virus-covid-19-registry",
+      "badges": [
+        "Proposal Review",
+        "Restricted Access"
+      ],
+      "checked": "2026-11-09",
+      "tags": [
+        "SARS-CoV-2",
+        "coronavirus",
+        "COVID",
+        "critical care",
+        "VIRUS",
+        "ICU clinical and physiologic databases",
+        "database",
+        "dataset",
+        "research"
+      ],
+      "category": "Research databases",
+      "kind": "Database",
+      "type": "database",
+      "source": "sccm.org"
+    },
+    {
+      "id": "db-sarp",
+      "name": "NHLBI TOPMed Severe Asthma Research Program (SARP)",
+      "topic": "Asthma and airway disease",
+      "summary": "Severe-asthma cohort with mild and moderate asthma comparators, detailed asthma phenotyping, and TOPMed whole-genome sequencing resources. Phenotypes include lung function, atopy, exhaled nitric oxide, symptoms, and exacerbations; available variables depend on the release.",
+      "access": "Browse the public study record and variable documentation, then request controlled participant-level data through dbGaP Authorized Access. Data Use Certification and study-specific consent restrictions apply.",
+      "url": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001446.v3.p2",
+      "accessUrl": "https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=login",
+      "badges": [
+        "Controlled Access",
+        "Data Agreement"
+      ],
+      "checked": "2026-11-09",
+      "tags": [
+        "SARP",
+        "asthma",
+        "TOPMed",
+        "genomics",
+        "airway",
+        "Asthma and airway disease",
+        "database",
+        "dataset",
+        "research"
+      ],
+      "category": "Research databases",
+      "kind": "Database",
+      "type": "database",
+      "source": "ncbi.nlm.nih.gov"
+    },
+    {
+      "id": "db-alveoli",
+      "name": "ARDSNet ALVEOLI",
+      "topic": "ARDS and acute respiratory failure trials",
+      "summary": "Randomized comparison of higher versus lower PEEP strategies in acute lung injury/ARDS. BioLINCC provides trial data, data dictionaries, case-report forms, and requestable biospecimens. Organ-failure-free-day outcome data are not available in the released resource.",
+      "access": "Register with BioLINCC and submit a data/specimen request under its current review and agreement process. Specimen availability is reviewed separately.",
+      "url": "https://biolincc.nhlbi.nih.gov/studies/alveoli/",
+      "accessUrl": "https://biolincc.nhlbi.nih.gov/studies/alveoli/",
+      "dictionaryUrl": "https://biolincc.nhlbi.nih.gov/studies/alveoli/",
+      "badges": [
+        "Data Request"
+      ],
+      "checked": "2026-11-09",
+      "tags": [
+        "ARDS",
+        "PEEP",
+        "ventilation",
+        "ALVEOLI",
+        "ARDSNet",
+        "ARDS and acute respiratory failure trials",
+        "database",
+        "dataset",
+        "research"
+      ],
+      "category": "Research databases",
+      "kind": "Database",
+      "type": "database",
+      "source": "biolincc.nhlbi.nih.gov"
     }
   ],
   "conferences": [
@@ -1413,7 +1729,8 @@ window.HUB_DATA = {
     "Population biobanks and linked clinical cohorts",
     "Chest radiography and imaging methods",
     "Lung nodules lung cancer and screening",
-    "Molecular genomics and lung cell atlases"
+    "Molecular genomics and lung cell atlases",
+    "Asthma and airway disease"
   ],
   "download": "assets/Pulmonary_and_Critical_Care_Research_Databases.docx"
 };

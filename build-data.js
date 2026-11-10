@@ -21,6 +21,9 @@ const resources = [
 resources.push(...JSON.parse(fs.readFileSync(path.join(__dirname,'data','additional-resources.json'),'utf8')));
 let index=0;
 const databases=inventory.flatMap(([topic,entries])=>entries.map(([name,summary,access,url])=>({id:'db-'+(++index),name,summary,access,url,topic,category:'Research databases',kind:'Database',type:'database',source:new URL(url).hostname.replace(/^www\./,''),checked,tags:[topic,'database','dataset','research']})));
+const additions=JSON.parse(fs.readFileSync(path.join(__dirname,'data','database-additions.json'),'utf8'));
+databases.push(...additions.map(r=>({...r,category:'Research databases',kind:'Database',type:'database',source:new URL(r.url).hostname.replace(/^www\./,''),tags:[...(r.tags||[]),r.topic,'database','dataset','research']})));
+const topics=[...inventory.map(s=>s[0]),...new Set(additions.map(r=>r.topic).filter(t=>!inventory.some(s=>s[0]===t)))];
 const conferenceUrl='https://www.medschool.lsuhsc.edu/DOM/Sections/Pulmonary-CC/fellow-conferences.aspx';
 const conferences=[
  {id:'pulmonary-research',title:'Pulmonary and Critical Care Research Conference',section:'Pulmonary and Critical Care',type:'Research conference',day:'WED',time:'12:00 PM',frequency:'2nd & 4th Wednesdays',location:'Location to be confirmed',note:'Schedule supplied by faculty. Session topics and speakers will be added from the section schedule.',url:conferenceUrl,checked,sourceLabel:'Faculty-provided recurrence · November 8, 2026'},
@@ -28,7 +31,10 @@ const conferences=[
  {id:'pulmonary-grand-rounds',title:'Pulmonary Grand Rounds',section:'Pulmonary and Critical Care',type:'Grand rounds',day:'THU',time:'2:00 PM',frequency:'Weekly',location:'Medical Education Building · 3rd floor Pulmonary Conference Room or Zoom',note:'The CME page provides lecture listings and a program contact. Check it for the current session.',url:'https://www.medschool.lsuhsc.edu/medical_education/cme/grandrounds-pulmonary.aspx',checked},
  {id:'public-health-seminars',title:'Public Health Research Seminars',section:'Public Health',type:'Research seminar',day:'SEE',time:'See official schedule',frequency:'Series schedule',location:'See individual seminar listing',note:'Open the Research Office seminar page for available titles and meeting details.',url:'https://publichealth.lsuhsc.edu/research/about-the-office/research-seminar.aspx',checked}
 ];
-const data={conferenceUrl,micrograntRecipients:JSON.parse(fs.readFileSync(path.join(__dirname,'data','microgrant-recipients.json'),'utf8')),updated:checked,resources,databases,conferences,topics:inventory.map(s=>s[0]),download:'assets/Pulmonary_and_Critical_Care_Research_Databases.docx'};
+const projectExamples=require('./dist/examples.js').approved(JSON.parse(fs.readFileSync(path.join(__dirname,'data','project-examples.json'),'utf8')));
+for(const project of projectExamples)for(const material of project.materials)if(material.url.startsWith('assets/')&&!fs.existsSync(path.join(__dirname,'dist',material.url)))throw Error('Missing project example asset: '+material.url);
+const intramuralFunding=require('./dist/funding.js').validate(JSON.parse(fs.readFileSync(path.join(__dirname,'data','intramural-funding.json'),'utf8')));
+const data={intramuralFunding,projectExamples,conferenceUrl,micrograntRecipients:JSON.parse(fs.readFileSync(path.join(__dirname,'data','microgrant-recipients.json'),'utf8')),updated:'2026-11-09',resources,databases,conferences,topics,download:'assets/Pulmonary_and_Critical_Care_Research_Databases.docx'};
 fs.writeFileSync(path.join(__dirname,'dist','app-data.js'),'window.HUB_DATA = '+JSON.stringify(data,null,2)+';\n');
 if(!fs.existsSync(path.join(__dirname,'dist',data.download)))throw Error('The current database Word document is missing. Restore it to dist/assets before building.');
 console.log(`Prepared ${resources.length} LSU resources, ${databases.length} databases in ${data.topics.length} topics, and ${conferences.length} conference series.`);

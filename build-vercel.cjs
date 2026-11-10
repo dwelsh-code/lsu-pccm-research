@@ -7,12 +7,14 @@ const source = fs.existsSync(path.join(__dirname, 'dist', 'index.html'))
   ? path.join(__dirname, 'dist') : __dirname;
 fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(path.join(output, 'assets'), { recursive: true });
-for (const file of ['index.html', 'styles.css', 'app-data.js', 'core.js', 'conference-core.js', 'schedule.js', 'app.js']) {
+for (const file of ['index.html', 'styles.css', 'app-data.js', 'core.js', 'conference-core.js', 'schedule.js', 'funding.js', 'examples.js', 'app.js']) {
   fs.copyFileSync(path.join(source, file), path.join(output, file));
 }
 const documentName = 'Pulmonary_and_Critical_Care_Research_Databases.docx';
 const documentSource = source === __dirname ? path.join(source, documentName)
   : path.join(source, 'assets', documentName);
 fs.copyFileSync(documentSource, path.join(output, 'assets', documentName));
+for(const dir of ['project-tools','project-examples']){const assetPath=path.join(source,'assets',dir);if(fs.existsSync(assetPath))fs.cpSync(assetPath,path.join(output,'assets',dir),{recursive:true});}
 if (!fs.existsSync(path.join(output, 'index.html'))) throw new Error('Website entry point is missing');
 console.log('Prepared static website in public/');
+

@@ -1,28 +1,19 @@
 # CTS Research Hub
 
-Live domains: https://ctsresearchhub.org and https://lsupccmresearch.org.
+Research resources for LSU Health New Orleans PCCM faculty, fellows, residents and students.
 
-Release 1.1 is implemented and tested, with publication pending Vercel deployment access. It simplifies navigation, increases typography, adds 13 research resources, a PCCM research presentation schedule, and Lowenstein PCCM Micro-Grants applications and recipients. Shared form activation is pending connection of the approved private storage and verification of email delivery; the previous release remains live until publication is confirmed.
+Website: https://www.ctsresearchhub.org/
 
-## Build and check
+## Source and Build
 
-Run `pnpm install`, `pnpm build`, and `pnpm test`. Vercel uses `node build-vercel.cjs` and publishes only `public/`. Private server code is under `api/` and `lib/`. Never deploy `.env` files or expose storage tokens. Environment variable names are documented in `.env.example`.
+Use the main branch of this repository and the existing Vercel research-site deployment. Run node build-data.js, node build-vercel.cjs, node verify.cjs and node --test tests/*.test.cjs after installing the locked dependencies. Data changes must include regenerated dist/app-data.js: the production build copies pre-generated files.
 
-## Content
+## Prepared Update
 
-- `data/database-inventory.json`: the preserved 40-resource PCCM database directory.
-- `data/additional-resources.json`: new study design, literature, funding, writing, and collaboration resources.
-- `data/microgrant-recipients.json`: approved recipients and projects; empty until the owner supplies award details.
-- `dist/`: generated resource data plus website HTML, CSS and JavaScript.
-- `docs/SHARED_FORMS_SETUP.md`: activation, privacy, pricing, and verification requirements.
-- `docs/VERCEL_DEPLOYMENT.md`: deployment and Porkbun DNS history.
+The November 9 update includes task-based links, project-start guidance, direct Kuali access, improved search, 46 datasets across 18 topics, Project Examples scaffolding and six development worksheets, and eight secondary LSU Health intramural funding mechanisms. Original database records and the Word download are preserved. Homepage conference wording is 2nd & 4th Wednesdays @ noon; calendar behavior remains noon America/Chicago.
 
-The conference recurrence is second and fourth Wednesdays at noon Central. Prior section schedule details, speakers, location, and holiday changes still need confirmation. The schedule does not fabricate presenter assignments.
+Lowenstein PCCM Micro-Grants remains primary. Other intramural funding is in a collapsed section below its form and recipients. Recurring funding schedules do not prove an active call. No real completed-project examples or approved award records have been supplied.
 
-The canonical documentation home is intended to be `/Users/dwelsh/Projects/Coding/Websites/lsu-health-cts-research-hub`. This session's active source checkout is outside iCloud in the permitted task workspace. Canonical promotion has not been completed because that destination is not writable in this session.
+Read PROJECT_CHARTER.md, README_RESTART.md, HANDOFF_2026-11-09_FINAL.md and FUTURE_DEPLOYMENTS.md. Content maintenance is documented in docs/PROJECT_EXAMPLES.md and docs/INTRAMURAL_FUNDING.md.
 
-The owner approved free private Vercel Blob storage and FormSubmit on November 8, 2026. Browser automation was rejected for the current URL; the CLI authorization attempt subsequently failed because session network policy blocked api.vercel.com. No paid services or unverified email delivery have been enabled.
-
-For an offline visual preview, run `node build-preview.cjs` and open `preview/CTS_Research_Hub_Preview.html`. Shared forms require the deployed API; the preview does not simulate successful submissions.
-
-The GitHub source update was also rejected by the connector with HTTP 403 “Resource not accessible by integration.” The current revision is committed locally; the remote repository still contains the earlier version.
+The prepared code passed 32 checks. A source push alone does not verify deployment; confirm the actual live site after release. Private operational records and credentials are intentionally excluded from this public documentation.

@@ -1,0 +1,139 @@
+{
+  "prepared_date": "2026-11-09",
+  "source_base": "ce95087fcb08ae488b1e7dabe1ecbca3aa527a2b",
+  "deployment_verified": false,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "d5f1bba17b51c44b3a83f9727a8eb7a0b27e0d9663b5ca6b36d2778f771116d6"
+    },
+    {
+      "path": "FUTURE_DEPLOYMENTS.md",
+      "sha256": "3fe3034b844bf615b411b4ac80a243051f57343fcb40e5f08fea1a3651cf51a2"
+    },
+    {
+      "path": "HANDOFF_2026-11-09_FINAL.md",
+      "sha256": "d7b8f1175b48f48728a7e9875d7b24cacd1a86fb7f12c9a9b39237f7b4a2b02e"
+    },
+    {
+      "path": "PROJECT_CHARTER.md",
+      "sha256": "afd797f070dabc66ad39b82124ca230f6681985a4fe4762c8989f51a6dfbcbd1"
+    },
+    {
+      "path": "README.md",
+      "sha256": "ba3e37359b44b81bb89fbe22bb4bb1e83906c5698393029522211457a9648daf"
+    },
+    {
+      "path": "README_RESTART.md",
+      "sha256": "be4cc85064ae1dba4b168d436a8c66c1a036e8d4a05efc5eda169d0029582a88"
+    },
+    {
+      "path": "build-data.js",
+      "sha256": "58a1be066132ebaa0dff626ee12b3676cb1a583f84d6babd4e5f9bc050008eed"
+    },
+    {
+      "path": "build-vercel.cjs",
+      "sha256": "ad115434024a5a2fa3d45c20b75486a4058e3e95b9cd66f4f07a8e49bee6f373"
+    },
+    {
+      "path": "data/additional-resources.json",
+      "sha256": "10895c90da750cd8b8829d3ff1209dc98c099b7c6ca9b13aba1ba2e2f2f1e78e"
+    },
+    {
+      "path": "data/database-additions.json",
+      "sha256": "70fe72dba56ec93c0130a06e1c9065288a8d5b92e8e232664b19df8267c68842"
+    },
+    {
+      "path": "data/intramural-funding.json",
+      "sha256": "05ea1888c7c15655bfcd6bf0b895bce2ac109b443c65ea0b8dbd97f90b871b66"
+    },
+    {
+      "path": "data/project-examples.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "dist/app-data.js",
+      "sha256": "c1721c0e1f0dea326cb0d5e58e03a03a01a3ea1d8dc6401947dc580f36d9d507"
+    },
+    {
+      "path": "dist/app.js",
+      "sha256": "2f6d16e1b8d9e2446d738d661175d6a7694bbc53989001fae5bc7e1f0f03cf7b"
+    },
+    {
+      "path": "dist/assets/project-tools/abstract-poster.html",
+      "sha256": "d954bfab4e28b3b91aee1c70e242a677c56cf1ded88e0cdda6e0b7cda40737c5"
+    },
+    {
+      "path": "dist/assets/project-tools/interventional.html",
+      "sha256": "c655687c8f3c9403f5ca12f24db57afd112e38500491e3e4757800bcdd8b1ebf"
+    },
+    {
+      "path": "dist/assets/project-tools/prospective.html",
+      "sha256": "25e83cc7d8127ef9dc15121c39afbb569e794d038a34ab74391c78359d88a6bd"
+    },
+    {
+      "path": "dist/assets/project-tools/retrospective.html",
+      "sha256": "6de770b626badfe57d072e575363f611fdf219ed585dcd986dac2b5575d99d0d"
+    },
+    {
+      "path": "dist/assets/project-tools/secondary-data.html",
+      "sha256": "a87dd1ef5cc04823e24629cdbfbcc0a3069eadd02e2a09db96a794ca48281544"
+    },
+    {
+      "path": "dist/assets/project-tools/specific-aims.html",
+      "sha256": "6e584ed2429563923725037c957b085dd62751bb4539cfd4029fd4a761387283"
+    },
+    {
+      "path": "dist/core.js",
+      "sha256": "15232ce1e6a4ed729871077d9bf8d00290b9ed3384388fbbae08ddede79c023f"
+    },
+    {
+      "path": "dist/examples.js",
+      "sha256": "a3850697d150a305cbd86ec1da9fc523f895db0c6f89310ca8188d03d0612931"
+    },
+    {
+      "path": "dist/funding.js",
+      "sha256": "5f8227807f8c7fca9041acf44635b8d1d70422058e61f25643eb584eb75746ea"
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "849b25f8b19ba20bc000a111f081a003e63c7af179e95667d8ce05972ebb1c77"
+    },
+    {
+      "path": "dist/schedule.js",
+      "sha256": "df79df688ae099907891fede8ba6d43e58be557211f40c2eceb9df1ef60b8ffb"
+    },
+    {
+      "path": "dist/styles.css",
+      "sha256": "da673b727ad14133b4e7248cf45deb599301c442733546fc019190acbfa90bfd"
+    },
+    {
+      "path": "docs/INTRAMURAL_FUNDING.md",
+      "sha256": "7f693891baf17b8d310368d5bce9489902750b0bb7a1ecce090f66e1be79e078"
+    },
+    {
+      "path": "docs/PROJECT_EXAMPLES.md",
+      "sha256": "1a621f911a363cfcb22900d15da81ab50d7276e01d9f88e69d1d73f3a06ce052"
+    },
+    {
+      "path": "tests/examples.test.cjs",
+      "sha256": "395a72ac203b5032038136900e11c1b73d2a71c44136a6c77fac8350858827fa"
+    },
+    {
+      "path": "tests/funding.test.cjs",
+      "sha256": "5dbf3214371dd38454980962b1690aa9d1ddbfa4978489222aab6c757fb64694"
+    },
+    {
+      "path": "tests/grant-browser.test.cjs",
+      "sha256": "64344da342c7f2fa948a42a4505dd557dd0cec5519e1a411c336e617fbc23bf0"
+    },
+    {
+      "path": "tests/launchpad.test.cjs",
+      "sha256": "775e3eaa084c5465c3a717d4d072a67bedc84b3771aeb573e16db9a9baf37aaa"
+    },
+    {
+      "path": "verify.cjs",
+      "sha256": "fa33d7f6091b420fb55374bf7a991709b78dcb571bdfd20f73f04e440dded059"
+    }
+  ]
+}

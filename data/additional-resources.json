@@ -232,5 +232,31 @@
       "Funding",
       "American Lung Association research awards"
     ]
+  },
+  {
+    "id": "kuali-login",
+    "name": "LSU Health Kuali Research Sign-In",
+    "category": "IRB and approvals",
+    "kind": "Application",
+    "summary": "Open Kuali Research for protocol submissions, proposal routing, and conflict-of-interest disclosures.",
+    "url": "https://lsuhsc.kuali.co/",
+    "source": "LSU Health New Orleans",
+    "type": "local",
+    "topic": "IRB and approvals",
+    "access": "An active Kuali user account is required. LSU Health personnel sign in with institutional credentials; follow the official quickguide for registration and external-user access.",
+    "accessUrl": "https://www.lsuhsc.edu/administration/academic/ors/irb/kuali_quickguides.aspx",
+    "badges": [
+      "LSU Health Sign-In"
+    ],
+    "checked": "2026-11-09",
+    "tags": [
+      "kuali",
+      "IRB",
+      "protocol",
+      "routing",
+      "COI",
+      "conflict of interest",
+      "submission"
+    ]
   }
 ]
